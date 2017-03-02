@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/mylibbg</item>
+        <item name="android:textColorPrimary">@color/itemTxtColor</item>
+        <item name="android:textColor">@color/itemTxtColor</item>
+        <item name="android:textSize">@dimen/app_txt_size</item>
+        <item name="android:actionMenuTextColor">@color/colorAccent</item>
+        <item name="actionMenuTextColor">@color/colorAccent</item>
+    </style>
+
+
+
+
+    <style name="MovieLib.RatingBar.Small" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:progressTint">@color/colorAccent</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:numStars">5</item>
+    </style>
+
+    <style name="MovieLib.RatingBar.Medium" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressTint">@color/colorAccent</item>
+        <item name="android:stepSize">1</item>
+        <item name="android:numStars">5</item>
+        <!-- <item name="android:minHeight">@dimen/app_list_row_title_height</item>
+        <item name="android:maxHeight">@dimen/app_list_row_title_height</item>-->
+    </style>
+
+</resources>

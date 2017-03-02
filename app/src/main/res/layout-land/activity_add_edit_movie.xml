@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_add_edit_movie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myapps.and.movielib.AddEditMovie"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="2"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="6"
+            android:layout_weight="1">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/eSubjectET"
+                android:hint="@string/subject_hint"
+                android:layout_weight="2"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/app_txt_size"
+                android:ellipsize="end"
+                android:inputType="text" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/eBodyET"
+                android:hint="@string/body_hint"
+                android:inputType="textMultiLine"
+                android:layout_weight="4"
+                android:textSize="@dimen/app_txt_size"
+                android:layout_marginTop="15dp"
+                android:maxLines="3" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/movieIV"
+            android:layout_weight="1"
+            android:visibility="invisible"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="12"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/pin"
+            android:id="@+id/eAttachedIV"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:longClickable="false"
+            android:clickable="false"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/downloading"
+            android:id="@+id/eShowImageIB"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textNoSuggestions"
+            android:id="@+id/eUrlET"
+            android:hint="@string/url_hint"
+            android:layout_weight="10"
+            android:gravity="left"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:ems="10"
+            android:scrollHorizontally="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3"
+        android:id="@+id/actionButtons">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/undo"
+            android:id="@+id/eCancelIB"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/sharing"
+            android:id="@+id/eShareIB"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/saving"
+            android:id="@+id/eSaveIB"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</LinearLayout>

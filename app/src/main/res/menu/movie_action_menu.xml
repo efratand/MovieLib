@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/edit_movie"
+        android:id="@+id/aEditMovie" />
+    <item android:title="@string/delete_movie"
+        android:id="@+id/aDelMovie" />
+    <item android:title="@string/set_watched"
+        android:id="@+id/aSetWatched" />
+    <item android:title="@string/set_unwatched"
+        android:id="@+id/aSetUnwatched" />
+    <item android:title="@string/rate_movie"
+        android:id="@+id/arateMovie" />
+</menu>

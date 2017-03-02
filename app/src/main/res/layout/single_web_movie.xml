@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="2"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_list_row_height"
+            android:id="@+id/wMovieTV"
+            android:textSize="@dimen/app_txt_size"
+            android:ellipsize="end"
+            android:layout_weight="7"
+            android:layout_gravity="top"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+
+</LinearLayout>

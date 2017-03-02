@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_search_web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.myapps.and.movielib.SearchWeb"
+    android:weightSum="12">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text|textNoSuggestions|textPersonName"
+            android:ems="10"
+            android:id="@+id/sSubjectET"
+            android:hint="@string/search_hint"
+            android:layout_weight="1"
+            android:textSize="@dimen/app_txt_size" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            app:srcCompat="@drawable/searching"
+            android:id="@+id/sGoBtn"
+            android:scaleType="fitCenter"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:id="@+id/sMoviesLV"
+        android:visibility="visible"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="3">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/prev"
+            android:id="@+id/sPrevIB"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/undo"
+            android:id="@+id/sCancelIB"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/next"
+            android:id="@+id/sNextIB"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>

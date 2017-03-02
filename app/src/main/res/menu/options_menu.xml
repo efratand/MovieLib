@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/delete_all"
+        android:id="@+id/oDeleteAll" />
+    <item android:title="@string/sort_menu"
+        android:id="@+id/oSort">
+        <menu >
+            <item android:title="@string/sort_by_subject"
+                android:id="@+id/sortSubject" />
+            <item android:title="@string/sort_by_rating"
+                android:id="@+id/sortRating" />
+            <item android:title="@string/sort_by_seen"
+                android:id="@+id/sortSeen" />
+        </menu>
+    </item>
+    <item android:title="@string/settings_menu"
+        android:id="@+id/oSettings" >
+        <menu >
+            <item android:title="@string/save_image"
+                android:id="@+id/setSaveImage" />
+            <item android:title="@string/auto_download"
+                android:id="@+id/setAutoDownload" />
+        </menu>
+    </item>
+    <item android:title="@string/exit"
+        android:id="@+id/oExit" />
+</menu>

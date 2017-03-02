@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d69c20</color>
+    <color name="colorPrimaryDark">#8e6611</color>
+    <color name="colorAccent">#c0392b</color>
+    <color name="appBgColor">#f7f6d4</color>
+    <color name="itemBgColor">#f7f6d4</color>
+    <color name="itemTxtColor">#114f75</color>
+    <color name="popupBgColor">#05175677</color>
+</resources>
